@@ -1,69 +1,169 @@
-body{
+body {
     text-align: center;
-    font-family:'Times New Roman', Times, serif;
-    background-color:antiquewhite;
-    color:palevioletred;
-    margin: 0px 0px 30px 30px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+    color: palevioletred;
+    margin: 0px;
+    padding: 0px;
 }
 
-header{
-    text-align:center;
-    color:palevioletred;
+header {
+    text-align: center;
+    color: palevioletred;
     font-size: larger;
 }
-    
-h2{
+
+h2 {
     text-align: center;
-    height: 40px;
+    min-height: 30px;
     border: 4px solid palevioletred;
 }
 
-p{
-    line-height 0px;
+p {
     padding: auto;
-    font-style:italic;
+    font-style: italic;
     padding: 0px;
     margin: 5px 10px;
     color: black;
 }
 
-img{
+img {
     max-width: 45%;
     margin: 0 auto;
 }
-    
-.social{
+
+.video_container {
+    margin: 5px;
+}
+
+.social {
     text-decoration: none;
 }
 
-h3{
-    color:palevioletred;
+h3 {
+    color: palevioletred;
     border: 4px solid palevioletred;
 }
 
-section3 {
-    width: 10%;
-}
-
-h4{
+h4 {
     padding: 0px;
 }
 
-h5{
+h5 {
     padding: 0px;
 }
 
-.titulo_social{
-    margin: 0;
+.titulo {
+    margin: 5px;
+}
 
+.titulo_footer {
+    margin: 10px 0px;
     padding: 0;
 }
 
-#section4{
-    margin-top: 24px;
+.mapa {
+    margin: 20px;
 }
 
-section{
+.local {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.local_info {
+    display: block;
+}
+
+#footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: palevioletred;
+    height: auto;
+    width: 100vw;
+    padding: 10px 0px;
+    color: #fff;
+}
+
+section {
     width: 60%;
     margin: 0 auto;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: black;
+    color: white;
+}
+
+.fa-instagram {
+    background: black;
+    color: white;
+}
+
+
+.fa-whatsapp {
+    background: black;
+    color: white;
+}
+
+
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6a58eb;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+    section {
+        width: 100%;
+    }
+
+    .local {
+        grid-template-columns: 1fr;
+    }
+
+    .local_info {
+        margin-bottom: 20px;
+    }
+
+    .formulario {
+        flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    button {
+        padding: 10px;
+        margin: 10px;
+    }
 }
