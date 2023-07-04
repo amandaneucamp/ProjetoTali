@@ -11,6 +11,15 @@ header {
     text-align: center;
     color: palevioletred;
     font-size: larger;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: palevioletred;
+    height: auto;
+    width: 100vw;
+    padding: 10px 0px;
+    color: #fff;
 }
 
 h2 {
